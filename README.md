@@ -1,38 +1,30 @@
-# NIFTY 100 Constituent Analysis
+NIFTY 100 Portfolio Strategy Backtesting
 
-## Overview
-This project analyzes the monthly returns and volatility of NIFTY 100 constituent companies using historical stock price data from Yahoo Finance.
+Objective:
+Analyze momentum-based investment strategies using NIFTY 100 constituent stocks.
 
-## Features
-- Dynamic NIFTY 100 constituent extraction
-- Automatic ticker validation
-- Historical stock price download
-- Monthly return calculation
-- Volatility analysis
-- Top 10 performing stocks visualization
-- Top 10 volatile stocks visualization
+Methodology:
+- Download historical stock data using Yahoo Finance
+- Calculate monthly returns
+- Select Top N stocks based on previous month's performance
+- Invest equally in selected stocks during the next month
+- Rebalance portfolio monthly
 
-## Tools & Libraries
-- Python
-- Pandas
-- yFinance
-- Matplotlib
-- Google Colab
+Strategies Tested:
+- Top 3
+- Top 5
+- Top 8
+- Top 10
+- Top 20
 
-## Methodology
-1. Extract latest NIFTY 100 constituents.
-2. Validate stock symbols through Yahoo Finance.
-3. Download historical data (2023–2025).
-4. Calculate monthly returns.
-5. Compute volatility.
-6. Visualize top performers and most volatile stocks.
+Results:
+Initial Investment: ₹100,000
 
-## Results
-- Constituents extracted: 104
-- Valid companies analyzed: 100
-- Monthly return and volatility metrics generated.
-- Comparative performance visualization created.
+Top 3 : ₹501,649
+Top 5 : ₹377,988
+Top 8 : ₹313,419
+Top 10 : ₹295,618
+Top 20 : ₹254,011
 
-## Author
-Ravi Kumar
-Delhi Technological University
+Tools:
+Python, Pandas, NumPy, Matplotlib, yFinance, Google Colab
